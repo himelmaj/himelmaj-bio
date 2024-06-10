@@ -1,0 +1,11 @@
+{
+  "site": {
+    "title": "himelmaj • bio",
+    "description": "¡Aquí está la descripción de mi increíble sitio web!"
+  },
+  "footer": {
+    "copyright": {
+      "message": "Casi todos los derechos reservados"
+    }
+  }
+}
