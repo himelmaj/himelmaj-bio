@@ -1,0 +1,49 @@
+---
+import Link from "./Link.astro";
+
+import Github from "./icons/Github.astro";
+import Twitter from "./icons/Twitter.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import Email from "./icons/Email.astro";
+import Instagram from "./icons/Instagram.astro";
+
+const LINKS = [
+    {
+        url: "https://github.com/himelmaj",
+        title: "Github",
+        icon: Github,
+    },
+    {
+        url: "https://twitter.com/himelmaj",
+        title: "Twitter",
+        icon: Twitter,
+    },
+    {
+        url: "https://www.linkedin.com/in/himelmaj/",
+        title: "LinkedIn",
+        icon: LinkedIn,
+    },
+    {
+        url: "mailto:himelmajumder1@gmail.com",
+        title: "Email",
+        icon: Email,
+    },
+    {
+        url: "https://www.instagram.com/himelmaj/",
+        title: "Instagram",
+        icon: Instagram,
+    },
+    
+];
+---
+
+<section class="flex flex-col gap-4 justify-center my-8 px-2">
+
+    {LINKS.map((link) => (
+        <Link aria-label={link.title} url={link.url} title={link.title}>
+            {link.icon && <link.icon />}
+        </Link>
+
+    ))}
+
+</section>

@@ -1,0 +1,15 @@
+{
+  "site": {
+    "title": "himelmaj • bio",
+    "description": "Here is the description of my awesome website!"
+  },
+  "footer": {
+    "copyright": {
+      "message": "Almost all rights reserved"
+    }
+  },
+  "hero": {
+    "description1": "👨‍💻 Junior Full Stack Web Developer",
+    "description2": "🚀 NextJS & 🐍 FastAPI Enthusiast"
+  }
+}
