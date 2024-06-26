@@ -1,10 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import {changeLanguage } from "i18next";
+import Hero from "../components/Hero.astro";
+import LinkList from "../components/LinkList.astro";
+import { changeLanguage } from "i18next";
 
 changeLanguage("es");
 ---
 
 <Layout>
-
+    <div class="flex flex-col">
+        <Hero />
+        <LinkList />
+    </div>
 </Layout>

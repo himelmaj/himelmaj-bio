@@ -16,7 +16,7 @@ import { HeadHrefLangs } from "astro-i18next/components";
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{t("site.title")}</title>
     <meta name="description" content={t("site.description")} />
@@ -28,11 +28,15 @@ import { HeadHrefLangs } from "astro-i18next/components";
     </div> -->
 
     <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-    <div class="opacity-80 m-4 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex flex-col justify-center" >
+
+    <div class="opacity-80 w-full mx-auto container lg:max-w-4xl md:max-w-2xl flex flex-col justify-center min-h-screen" >
       <Header />
-      <slot />
+      <main class="flex-grow">
+        <slot />
+      </main>
       <Footer />
     </div>
+
     <style is:global>
       :root {
         color-scheme: light dark;

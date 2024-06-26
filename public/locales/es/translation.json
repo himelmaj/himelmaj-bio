@@ -7,5 +7,9 @@
     "copyright": {
       "message": "Casi todos los derechos reservados"
     }
+  },
+  "hero": {
+    "description1": "👨‍💻 Programador Web Full Stack Junior",
+    "description2": "🚀 Entusiasta de NextJS & 🐍 FastAPI"
   }
 }
