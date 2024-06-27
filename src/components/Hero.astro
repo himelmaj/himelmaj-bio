@@ -3,16 +3,12 @@ import { t } from "i18next";
 
 import { Image } from "astro:assets";
 
-import Banner from "../assets/test.png";
+import Logo from "@/assets/test.png";
 ---
 
 <section class="flex flex-col gap-4 justify-center items-center px-5 sm:px-0">
-  <!-- <img
-    class="rounded-full shadow-lg size-28 sm:size-40 pointer-events-none"
-    src="/test.jpg"
-  /> -->
   <Image
-    src={Banner}
+    src={Logo}
     alt="Himel Majumder"
     class="rounded-full shadow-lg size-28 sm:size-40 pointer-events-none"
     loading="eager"

@@ -1,11 +1,11 @@
 {
   "site": {
-    "title": "himelmaj • bio",
-    "description": "¡Aquí está la descripción de mi increíble sitio web!"
+    "title": "himelmaj • tree",
+    "description": "Bienvenido a mi página de enlaces personales. Aquí encontrarás todas mis redes sociales y sitios importantes en un solo lugar."
   },
   "footer": {
     "copyright": {
-      "message": "Casi todos los derechos reservados"
+      "message": "Todos los derechos reservados"
     }
   },
   "hero": {
