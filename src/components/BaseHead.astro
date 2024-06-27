@@ -1,0 +1,63 @@
+---
+import '@/styles/globals.css';
+import { ViewTransitions } from "astro:transitions";
+import { t } from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+const canonicalURL = new URL(Astro.url).href;
+const socialImageURL = new URL('/screenshot.png', Astro.url).href
+---
+
+
+<meta charset='utf-8' />
+<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+<title>{t("site.title")}</title>
+
+<!-- favicon -->
+
+<link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
+<link rel='android-chrome-192x192' sizes='192x192' href='/favicon/android-chrome-192x192.png' />
+<link rel='android-chrome-512x512' sizes='512x512' href='/favicon/android-chrome-512x512.png' />
+<link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
+<link rel='icon' type='image/png' sizes='16x16' href='/favicon/favicon-16x16.png' />
+<link rel="icon" type="image/icon" href="/favicon/favicon.ico" />
+<link rel='manifest' href='/favicon/site.webmanifest' />
+
+<!-- canonical url -->
+
+<link rel='canonical' href={canonicalURL} />
+
+<!-- meta tags -->
+
+<meta content={t("site.title")} name='title' />
+<meta content={t("site.description")} name='description' />
+<meta content='Himel Majumder' name='author' />
+
+<!-- theme color -->
+<meta content='' name='theme-color' />
+
+
+<!-- open graph -->
+
+<meta content={'website'} property='og:type' />
+<meta content={t("site.title")} property='og:title' />
+<meta content={t("site.description")} property='og:description' />
+<meta content={canonicalURL} property='og:url' />
+<meta content={t("site.title")} property='og:site_name' />
+<meta content={socialImageURL} property='og:image' />
+<meta content='1200' property='og:image:width' />
+<meta content='630' property='og:image:height' />
+
+<!-- twitter -->
+
+<meta content='summary_large_image' name='twitter:card' />
+<meta content={t("site.title")} name='twitter:title' />
+<meta content={t("site.description")} name='twitter:description' />
+<meta content={socialImageURL} name='twitter:image' />
+<meta content={canonicalURL} property='twitter:url' />
+
+<HeadHrefLangs />
+
+<ViewTransitions />
+
+<meta name="generator" content={Astro.generator} />
