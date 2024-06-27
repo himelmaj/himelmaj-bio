@@ -11,7 +11,7 @@
 
 ## 📸 Screenshots
 
-![Main Page](./screenshot.png)
+![Main Page](./public/screenshot.png)
 
 ## 🛠 Technologies Used
 
