@@ -1,0 +1,24 @@
+---
+
+const screenshot = new URL('/screenshot.png', Astro.url)
+const logo = new URL('/logo.png', Astro.url)
+
+const creatorSchema = {
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"url": 'https://himelmaj.zeabur.app/',
+	"image": screenshot,
+	"sameAs": [
+		"https://www.linkedin.com/in/himelmaj/",
+		"https://x.com/himelmaj",
+		"https://github.com/himelmaj",
+	],
+	"logo": logo,
+	"name": "Himel Majumder",
+	"alternateName": "Himel Majumder",
+	"description": "Web enlaces personales. Aquí encontrarás todas mis redes sociales y sitios importantes en un solo lugar."
+}
+
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(creatorSchema)} />

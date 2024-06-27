@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /en
+
+# Host
+Host: https://himelmaj.zeabur.app/
+
+# Sitemaps
+Sitemap: https://himelmaj.zeabur.app/sitemap-index.xml
