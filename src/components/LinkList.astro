@@ -1,12 +1,17 @@
 ---
 import Link from "./Link.astro";
-
 import Github from "./icons/Github.astro";
 import Twitter from "./icons/Twitter.astro";
 import LinkedIn from "./icons/LinkedIn.astro";
 import Email from "./icons/Email.astro";
-
+import Person from "./icons/Person.astro";
+import Call from "./icons/Call.astro";
 const LINKS = [
+    {
+        url: "https://himelmaj.vercel.app/",
+        title: "Portfolio",
+        icon: Person,
+    },
     {
         url: "https://github.com/himelmaj",
         title: "Github",
@@ -26,6 +31,11 @@ const LINKS = [
         url: "mailto:himelmajumder1@gmail.com",
         title: "Email",
         icon: Email,
+    },
+    {
+        url: "https://cal.com/himel",
+        title: "Schedule a call",
+        icon: Call,
     }
 ];
 
