@@ -6,10 +6,13 @@ import LinkedIn from "./icons/LinkedIn.astro";
 import Email from "./icons/Email.astro";
 import Person from "./icons/Person.astro";
 import Call from "./icons/Call.astro";
+
+import { t } from "i18next";
+
 const LINKS = [
     {
         url: "https://himelmaj.vercel.app/",
-        title: "Portfolio",
+        title: t("buttons.portfolio"),
         icon: Person,
     },
     {
@@ -29,7 +32,7 @@ const LINKS = [
     },
     {
         url: "https://cal.com/himel",
-        title: "Schedule a call",
+        title: t("buttons.cal"),
         icon: Call,
     }
 ];

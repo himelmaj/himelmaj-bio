@@ -11,5 +11,9 @@
   "hero": {
     "description1": "👨‍💻 Junior Full Stack Web Developer",
     "description2": "🚀 NextJS & 🐍 FastAPI Enthusiast"
+  } ,
+  "buttons": {
+    "portfolio": "Portfolio",
+    "cal": "Schedule a call"
   }
 }
