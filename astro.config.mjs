@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   compressHTML: true,
+  site: 'https://himel-link.vercel.app',
   prefetch: true,
   integrations: [tailwind(), astroI18next(), sitemap()]
 });

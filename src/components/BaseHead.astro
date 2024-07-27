@@ -1,0 +1,114 @@
+---
+import "@/styles/globals.css";
+import { ViewTransitions } from "astro:transitions";
+import { t } from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+import { SEO } from "astro-seo";
+
+import RichResults from "./RichResults.astro";
+
+const determineCanonicalURL = () => {
+	if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
+	return Astro.url.pathname;
+};
+
+const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
+const image = new URL("/screenshot.png", Astro.url);
+---
+
+<SEO
+	title={"himelmaj 🔗"}
+	description={t("site.description") ?? "Himel Majumder - Personal Links"}
+	charset="UTF-8"
+	openGraph={{
+		basic: {
+			title: "himelmaj 🔗",
+			type: "website",
+			image: "https://himelmaj.vercel.app/screenshot.webp",
+			url: canonicalURL,
+		},
+	}}
+	twitter={{
+		card: "summary_large_image",
+		site: "@himelmaj",
+		title: "himelmaj 🔗",
+		creator: "@himelmaj",
+		image: image,
+		imageAlt: "himelmaj 🔗",
+		description: "Himel Majumder - Personal Links",
+	}}
+	extend={{
+		link: [
+			{
+				rel: "icon",
+				type: "image/png",
+				sizes: "32x32",
+				href: "/favicon-32x32.png",
+			},
+			{
+				rel: "icon",
+				type: "image/png",
+				sizes: "16x16",
+				href: "/favicon-16x16.png",
+			},
+			{
+				rel: "icon",
+				type: "image/ico",
+				href: "/favicon.ico",
+			},
+			{
+				rel: "apple-touch-icon",
+				type: "image/png",
+				href: "/apple-touch-icon.png",
+			},
+			{
+				rel: "android-chrome-192x192",
+				type: "image/png",
+				sizes: "192x192",
+				href: "/android-chrome-192x192.png",
+			},
+			{
+				rel: "android-chrome-512x512",
+				type: "image/png",
+				sizes: "512x512",
+				href: "/android-chrome-512x512.png",
+			},
+			{
+				rel: "manifest",
+				href: "/site.webmanifest",
+			},
+		],
+
+		meta: [
+			{
+				name: "description",
+				content: "Himel Majumder - Personal Links",
+			},
+			{
+				name: "author",
+				content: "Himel Majumder",
+			},
+			{
+				name: "viewport",
+				content:
+					"width=device-width, initial-scale=1.0, shrink-to-fit=no",
+			},
+			{
+				name: "robots",
+				content: "index",
+			},
+			{
+				name: "keywords",
+				content:
+					"Himel Majumder, Himel, Majumder, Personal Links, Links",
+			},
+		],
+	}}
+/>
+
+<!-- hreflangs -->
+
+<HeadHrefLangs />
+
+<ViewTransitions />
+<RichResults />

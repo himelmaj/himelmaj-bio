@@ -3,7 +3,7 @@ Allow: /
 Allow: /en
 
 # Host
-Host: https://himelmaj.zeabur.app/
+Host: https://himel-link.vercel.app
 
 # Sitemaps
-Sitemap: https://himelmaj.zeabur.app/sitemap-index.xml
+Sitemap: https://himel-link.vercel.app
